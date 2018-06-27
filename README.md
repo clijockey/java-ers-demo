@@ -35,6 +35,7 @@ $ ./mvnw clean install
 ### To run the application locally
 The application is set to use an embedded H2 database in non-PaaS environments, and to take advantage of Pivotal CF's auto-configuration for services. To use a MySQL Dev service in PCF, simply create and bind a service to the app and restart the app. No additional configuration is necessary when running locally or in Pivotal CF.
 
+
 In Pivotal CF, it is assumed that a Pivotal MySQL service will be used.
 
 ```
