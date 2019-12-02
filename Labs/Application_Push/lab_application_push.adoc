@@ -36,15 +36,6 @@ Change to the _attendees_ sample application directory:
 $ cd $COURSE_HOME
 ----
 
-=== Download
-
-If you cannot run the maven script to build:
-
-. Download the attendees1-0.0.1-SNAPSHOT.jar file https://bintray.com/mborges-pivotal/generic/attendees1/head#files[here]
-. Create the directory `/build/libs/`.
-. Place the .jar file in the `/build/libs/` directory.
-. Skip down to the 'Push' section.
-
 === Build
 
 Use the Maven Wrapper to build and package the application:

@@ -83,4 +83,5 @@ Basically it just runs "./mvnw test" against the git-repo
   * `fly -t lite unpause-pipeline -p pcf-ers-demo`
   * Open `http://192.168.100.4:8080` in your browser and enjoy!
 
+* You will also need to set up github repos and a [github access token](https://github.com/settings/tokens) for your release repo
 ###  __FYI DO NOT COMMIT `pcf-ers-demo-credentials.yml` as it has all your secrets__
