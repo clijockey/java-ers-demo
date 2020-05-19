@@ -1,0 +1,15 @@
+steps:
+  - name: maven:3-jdk-8
+    id: Test
+    entrypoint: mvn
+    args: ["test"]
+  
+  - name: maven:3-jdk-8
+    id: Build
+    entrypoint: mvn
+    args: ["package", "-Dmaven.test.skip=true"]
+  
+  - name: gcr.io/cloud-builders/docker
+    # id: Containerise
+    args: ["build", "-t", "gcr.io/big-rob/java-app", "--build-arg=JAR_FILE=target/pcf-ers-demo1-0.0.1-SNAPSHOT.jar", "."]
+images: ["gcr.io/big-rob/java-app"]
